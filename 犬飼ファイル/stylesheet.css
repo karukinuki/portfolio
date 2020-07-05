@@ -1,6 +1,88 @@
 @charset "UTF-8";
 
+h3{
+  font-size: 50px;
+  text-align: center;
+}
+#navlist{
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #bbbbbb;
+  width: 100%;
+}
+#navlist ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 #navlist li{
   list-style: none;
-  float: right;
+  padding: 0 24px;
 }
+header{
+  background-image: url(画像.jpg);
+  background-size: cover;
+  align-items: center;
+  height: 80vh;
+  padding-top: 120px;
+}
+header h1{
+  font-size: 70px;
+  text-align: center;
+}
+
+.profile{
+  background-color: #CCCCCC;
+  padding-bottom: 30px;
+}
+.profile h3{
+  margin: 0 ;
+  padding: 30px;
+}
+.p-content{
+  display: flex;
+  width: 80%;
+  margin: 0 70px;
+}
+.p-pic{
+  width: 30%;
+}
+.profile img{
+  border-radius: 50%;
+}
+.skills{
+  display: flex;
+  justify-content: center;
+}
+.skill-box{
+  margin: 0 80px;
+}
+.skill-title{
+  font-size: 30px;
+}
+
+
+
+.work{
+  background-color: #BBBBBB;
+  padding-bottom: 70px;
+  padding-top: 10px;
+}
+.w-content{
+  display: flex;
+  padding: 0 70px;
+}
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
