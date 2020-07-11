@@ -3,21 +3,21 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
-    <title>犬飼</title>
+    <title>Inukai's portfolio</title>
     <link rel="stylesheet" href="stylesheet.css">
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
   </head>
   <body>
     <header>
-      <nav id="navlist">
-        <ul>
-          <li><a href="#Profile">プロフィール</a></li>
-          <li><a href="#skill">スキル</a></li>
-          <li><a href="#works">製作物</a></li>
-          <li><a href="#contact">連絡先</a></li>
+      <nav>
+        <ul class="f-container">
+          <li><a href="#Profile" class="f-item">プロフィール</a></li>
+          <li><a href="#skill" class="f-item">スキル</a></li>
+          <li><a href="#works" class="f-item">製作物</a></li>
+          <li><a href="#contact" class="f-item">連絡先</a></li>
         </ul>
       </nav>
-      <div class="">
+      <div class="top">
         <h1>inukai's portfolio</h1>
       </div>
     </header>
@@ -36,9 +36,9 @@
                 <ul>
                   <li>名前：犬飼 顕智</li>
                   <li>出身：山梨県</li>
-                  <li>経歴：大学で僧侶の資格を取得し、卒業後に一年間港区芝公園の増上寺で研修生として随身した後、
-                  紹介にて世田谷区のお寺に努めておりました。</li>
-                  <li>なにをかこうか迷っております</li>
+                  <li>実家はお寺。大学で僧侶の資格を取得し、卒業後に修行として一年間港区芝公園の増上寺で研修生として随身した後、
+                  紹介にて世田谷区のお寺に努めておりましたが、自分のお寺には限界を感じており決心し、興味のあったIT業界にチャレンジしました。</li>
+                  <li></li>
                 </ul>
               </p>
             </div>
@@ -46,19 +46,21 @@
       </section>
       <section class="skill">
         <h3>スキル</h3>
-        <div class="skills">
-          <div class="skill-box">
-            <div class="skill-title">フロントエンド</div>
-            <p class="skill-text">
-              HTML.CSS.javascript<br>
-              jQuery.bootstrap
-            </p>
+        <div class="skills f-container">
+          <div class="skill-box f-item">
+            <i class="far fa-question-circle fa-4x"></i>
+            <div class="skill-title">html css</div>
+            <p>様々なコードを試し、いくつかのクローンサイトを製作。Bootstrapを使ったコーディングも経験済み。</p>
           </div>
-          <div class="skill-box">
-            <div class="skill-title">バックエンド</div>
-            <p class="skill-text">
-              Ruby
-            </p>
+          <div class="skill-box f-item">
+            <i class="far fa-question-circle fa-4x"></i>
+            <div class="skill-title">javascript</div>
+            <p>基本的な読み書きが可能。jQueryでのコーディングも経験済み</p>
+          </div>
+          <div class="skill-box f-item">
+            <i class="far fa-question-circle fa-4x"></i>
+            <div class="skill-title">Ruby</div>
+            <p>railsにてお寺の管理者用檀家管理アプリを作成。</p>
           </div>
         </div>
       </section>
@@ -72,9 +74,13 @@
             <p>
               <ul>
                 <li>danka_web</li>
+                <a href="#">ここにリンクを貼る</a>
                 <ol>お寺の住職が檀家さんを管理するwebアプリです。</ol>
                 <ol>
-                  檀家さんの一覧をパソコン、またはスマートフォンで管理をすることができる。
+                  檀家さんの一覧をパソコン、またはスマートフォンで管理をすることができます。
+                </ol>
+                <ol>
+                  また手作業だった檀家さんへの法事案内も作成でき、打ち間違いなどの間違いを防ぐとともに素早い発送できます。
                 </ol>
               </ul>
             </p>
@@ -83,10 +89,21 @@
       </section>
       <section class="contact">
         <h3>連絡先</h3>
-      </secti>
+        <div class="form">
+          <form action="GoogleフォームのURL" method="post">
+            <input type="text" name="Googleフォームからコピペ"  placeholder="Your Name">
+            <input type="email" name="Googleフォームからコピペ"  placeholder="Your Email">
+            <input type="text" name="Googleフォームからコピペ"  placeholder="Subject">
+            <textarea name="Googleフォームからコピペ" rows="5" cols="30" placeholder="messages..."></textarea>
+            <button type="submit" name="submit" class="btn btn-info ">Submit</button>
+          </form>
+        </div>
+      </section>
     </main>
     <footer>
-
+      <div class="copy">
+        © inukai portfolio 2020
+      </div>
     </footer>
   </body>
 </html>
